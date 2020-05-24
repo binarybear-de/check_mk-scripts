@@ -12,8 +12,8 @@
 
 ADDRESS=127.0.0.1 #address of your UniFi Video Server, default 127.0.0.1
 PORT=7443 #port of your UniFi Video Server, default 7443
-MAC_LIST=( F09FC2C0FE2B B4FBE4FF4665 ) #space-separated list of all MAC addresses without separation characters, e.g. 012345678910
-API_KEY="lkGksS3KktDATB8gelgcRG3RP6acltFQ" #the API key - get one in UniFi Video UI User management
+MAC_LIST=( F09FC2XXXXXX B4FBE4XXXXXX ) #space-separated list of all MAC addresses without separation characters, e.g. 012345678910
+API_KEY="somekey" #the API key - get one in UniFi Video UI User management
 PATH_JQ="/usr/bin/jq" #path to jq
 WARN_HOURS=12 #threshold for WARNING STATE
 CRIT_HOURS=24 #threshold for CRITICAL STATE
