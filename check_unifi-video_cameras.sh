@@ -7,8 +7,8 @@
 # - also check if cam is connected right now
 # - cache the curl response instead of CURLing each value
 
-# This script uses JSON parsing to pull a single variable from the Unifi Video system through the Admin API.
 # It depends on the small 'jq' parsing package, so you'll need to install that first.
+# Create a API key in UniFi Video in the users tab (a dedicated read-only user is okay)
 
 ADDRESS=127.0.0.1 #address of your UniFi Video Server, default 127.0.0.1
 PORT=7443 #port of your UniFi Video Server, default 7443
