@@ -32,7 +32,7 @@ elif [ $CRIT_DAYS_DATE -gt $EXPIRY_DATE ]; then
 STATE=2
 DESCRIPTION="Expiry in $EXPIRY_DAYS day(s) (valid until $(date -d @$EXPIRY_DATE '+%Y-%m-%d'))!"
 
-elif [ $WARN_DAYS_DATE -gt $EXPIRY_DATE ] && [ $CRIT_DAYS_DATE -lt $EXPIRY_DATE ]; then
+elif [ $WARN_DAYS_DATE -gt $EXPIRY_DATE ]; then
 STATE=1
 DESCRIPTION="Expiry in $EXPIRY_DAYS day(s) (valid until $(date -d @$EXPIRY_DATE '+%Y-%m-%d'))."
 
