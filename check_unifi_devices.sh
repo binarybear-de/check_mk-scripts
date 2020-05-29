@@ -7,7 +7,7 @@
 # - be deployable without installer-script
 # - added some more API values to check
 
-# This script uses JSON parsing to pull a single variable from the Unifi Video system through the Admin API.
+# This script uses JSON parsing to pull a single variable from the Unifi system through the API.
 # It depends on the small 'jq' parsing package, so you'll need to install that first.
 # Also download this script which will be sourced below and set the path:
 # https://github.com/qgmgit/qgm-check_unifi/blob/master/unifi_api
@@ -21,7 +21,7 @@ username=someuser
 password=somepassword
 baseurl=https://localhost:8443
 site=default
-. /usr/lib/check_mk_agent/unifi_api
+. /usr/lib/check_mk_agent/unifi_api #Source unifi api skript
 
 ####
 # Source the ubiquiti API functions
