@@ -2,7 +2,7 @@
 
 ###
 # small script to keep track of all apache2 VHOSTs's certificates without the need of specify them manually in monitoring...
-# created by bitformer, Max Spangenberg on 2020-05-07
+# created by Max Spangenberg on 2020-08-27
 ###
 
 #Set your limits here - currently defaults for till from Check_MK are used
