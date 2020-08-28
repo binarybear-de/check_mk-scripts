@@ -7,7 +7,7 @@
 # for dual band you may need to run this twice for each band to keep those client numbers separated...
 
 FILTER="wlan" #search-filter for autodetection, e.g. 'wlan' or 'ath' depending on your hardware
-NAME="WLAN" #the check's name in Check_MK
+NAME="WLAN-Stations" #the check's name in Check_MK
 WARN_CLIENTS=6 #threshold for WARNING state
 CRIT_CLIENTS=8 #threshold for CRITIAL state
 STATE_DISABLED=0 #state if wifi is detected as disabled, 0 = OK, 1 = WARN, 2 = CRIT, 3 = UNKNOWN
