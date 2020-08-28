@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/ash
 # to keep track of the amount of clients associated to an OpenWrt AccessPoint
 # dependency is the iw package
 # it automatically finds all wifi adapter-names by parsing them from ifconfig's output
