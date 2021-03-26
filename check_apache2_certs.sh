@@ -1,15 +1,17 @@
 #!/bin/bash
-
-###
 # small script to keep track of all apache2 VHOSTs's certificates without the need of specify them manually in monitoring...
-# created by Max Spangenberg on 2020-08-27
-###
+# https://github.com/binarybear-de/check_mk-scripts/blob/master/check_apache2_certs.sh
+SCRIPTBUILD="BUILD 2021-03-27"
 
 #Set your limits here - currently defaults for till from Check_MK are used
 WARN_DAYS=28
 CRIT_DAYS=14
 WARN_DAYS_DATE=$(($(date +%s) + (86400*$WARN_DAYS)));
 CRIT_DAYS_DATE=$(($(date +%s) + (86400*$CRIT_DAYS)));
+
+###############################################################
+# you should not need to edit anything below here
+###############################################################
 
 find /etc/apache2/sites-enabled/ -iname *.conf |
 while read FILE ; do
